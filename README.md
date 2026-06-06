@@ -1,94 +1,136 @@
-# Project Title
-
-## AI Company Knowledge Assistant using Streamlit & RAG
-
----
-# Project Summary
-
-This project is a production-ready AI assistant developed using Streamlit, OpenAI GPT, ChromaDB, and Retrieval-Augmented Generation (RAG). The system allows users to ask questions related to company policies such as vacation leave, remote work, parental benefits, and HR guidelines.
-
-The assistant retrieves relevant information from company documents using semantic search and vector embeddings, then generates intelligent answers using GPT-based language models. The project combines conversational AI with document retrieval to create an interactive and user-friendly knowledge assistant. 
 
 
+## Project Summary
 
-# Project Overview
+This project focuses on building a complete end-to-end Machine Learning Operations (MLOps) pipeline that takes a machine learning model from training to deployment, monitoring, version management, and continuous improvement. The goal is to bridge the gap between developing ML models in notebooks and running them reliably in production environments. The project uses MLflow for experiment tracking, model versioning, and registry management while demonstrating real-world predictive maintenance applications.  
 
-The application provides a web-based chatbot interface where employees can interact naturally and receive accurate responses from internal company documents. The system integrates all previous modules including OpenAI API integration, ChromaDB vector database, semantic retrieval, and Streamlit deployment into one complete AI solution. 
 
+# Project Objective
+
+To design and implement a production-ready ML system that:
+
+* Tracks machine learning experiments
+* Manages model versions
+* Deploys models efficiently
+* Monitors model performance
+* Supports automated retraining
+* Ensures reproducibility and scalability
+
+ 
+# Problem Statement
+
+Traditional machine learning projects often stop after achieving good accuracy in a notebook. However, production systems require:
+
+* Model deployment
+* Version control
+* Monitoring
+* Performance tracking
+* Automated updates
+
+This project addresses these challenges by creating a complete MLOps workflow. 
 
 
 # Key Features
 
-* AI-powered chatbot interface
-* Semantic document search using embeddings
-* ChromaDB vector database integration
-* Streamlit production web interface
-* Retrieval-Augmented Generation (RAG) system
-* Conversation history management
-* Session state handling
-* Sidebar with project information and statistics
-* Loading spinner during search
-* Error handling system
-* Clear chat history button
-* Production-ready deployment architecture  
+### 1. Experiment Tracking
+
+* Track model parameters
+* Store performance metrics
+* Save model artifacts
+* Compare multiple experiments
+* Ensure reproducibility
+
+
+
+### 2. MLflow Integration
+
+* Experiment Tracking
+* Model Packaging
+* Model Deployment
+* Model Registry
+
+
+
+### 3. Model Registry
+
+* Centralized model repository
+* Model version control
+* Model lineage tracking
+* Deployment management
+
+
+
+### 4. Model Lifecycle Management
+
+* None
+* Staging
+* Production
+* Archived
+
+Models move through controlled deployment stages before production release. 
+
+### 5. Production Monitoring
+
+* Performance tracking
+* Data drift monitoring
+* Model degradation detection
+* Retraining triggers
+
+
+
+### 6. Rollback Support
+
+* Revert to previous versions
+* Safe deployment management
+* Production reliability
+
+
+
+### 7. Predictive Maintenance Use Case
+
+* Equipment failure prediction
+* Sensor data analysis
+* Failure probability estimation
+* Preventive maintenance alerts
+
+
 
 # Technologies Used
 
 * Python
-* Streamlit
-* OpenAI GPT-3.5 / GPT-4
-* ChromaDB
-* LangChain
-* Semantic Search
-* Vector Embeddings
-* RAG (Retrieval-Augmented Generation)
-* dotenv
+* MLflow
+* Scikit-Learn
+* Machine Learning Models
+* Model Registry
+* MLOps Pipelines
+* CI/CD Concepts
+* Monitoring & Logging
+
+ 
+
+# System Workflow
+
+```text
+Data Collection
+       ↓
+Experiment Tracking
+       ↓
+Model Training
+       ↓
+Validation
+       ↓
+Deployment
+       ↓
+Monitoring
+       ↓
+Retraining
+```
+
+This lifecycle creates a continuous improvement loop for machine learning systems. 
 
 
 
-# Working Flow
-
-1. User enters a question in the Streamlit chat interface.
-2. The query is sent to ChromaDB for semantic similarity search.
-3. Relevant company documents are retrieved.
-4. Retrieved context is combined into a prompt.
-5. OpenAI GPT model generates an intelligent response.
-6. Response is displayed in the chatbot UI with conversation history.  
 
 
 
-# Modules Included
-
-## 1. Streamlit Chat Interface
-
-Creates a professional chatbot UI with message history and interactive conversation. 
-
-## 2. ChromaDB Vector Database
-
-Stores embeddings of company documents for semantic retrieval. 
-
-## 3. RAG System
-
-Combines retrieval and generation to answer questions accurately using document context. 
-
-## 4. OpenAI Integration
-
-Uses GPT models for natural language understanding and response generation. 
-
-
-# Advantages of the Project
-
-* Fast document-based question answering
-* Reduces manual HR support workload
-* User-friendly interface
-* Accurate context-aware responses
-* Easy deployment and scalability
-* Real-world GenAI application
-* Portfolio-ready AI project  
-
-
-
-# Conclusion
-
-The AI Company Knowledge Assistant is a complete Generative AI solution that demonstrates practical implementation of Streamlit deployment, vector databases, semantic search, and Retrieval-Augmented Generation. The project successfully integrates conversational AI with document retrieval to build an intelligent assistant capable of answering company-related queries efficiently and accurately. It is a production-ready and portfolio-worthy application for modern AI systems.
 
