@@ -1,136 +1,24 @@
+## Company Knowledge Assistant (Semantic RAG Chatbot)
+
+An interactive Retrieval-Augmented Generation (RAG) chatbot built to query internal company policies semantically. This project is optimized to run completely locally or within resource-constrained environments (like Kaggle) by utilizing open-source text embeddings and an efficient local vector database, bypassing reliance on active external LLM API quotas.
 
 
-## Project Summary
-
-This project focuses on building a complete end-to-end Machine Learning Operations (MLOps) pipeline that takes a machine learning model from training to deployment, monitoring, version management, and continuous improvement. The goal is to bridge the gap between developing ML models in notebooks and running them reliably in production environments. The project uses MLflow for experiment tracking, model versioning, and registry management while demonstrating real-world predictive maintenance applications.  
-
-
-# Project Objective
-
-To design and implement a production-ready ML system that:
-
-* Tracks machine learning experiments
-* Manages model versions
-* Deploys models efficiently
-* Monitors model performance
-* Supports automated retraining
-* Ensures reproducibility and scalability
-
- 
-# Problem Statement
-
-Traditional machine learning projects often stop after achieving good accuracy in a notebook. However, production systems require:
-
-* Model deployment
-* Version control
-* Monitoring
-* Performance tracking
-* Automated updates
-
-This project addresses these challenges by creating a complete MLOps workflow. 
+## 🚀 Features
+Semantic Search vs. Keyword Search: Utilizes deep-learning embeddings to understand query intent rather than basic keyword matching (e.g., matching "PTO rules" to "Vacation Policy").
+Zero-Cost Embedding Layer: Uses the open-source all-MiniLM-L6-v2 transformer model generating 384-dimensional dense vectors locally.
+Persistent Vector DB: Powered by ChromaDB to index, store, and query document chunks efficiently.
+Interactive UI: A sleek, conversational chat interface built using Streamlit featuring real-time document search tracking and chat history metrics.
+Production Workaround/Fallback: Features a smart fail-safe mechanism that instantly delivers exact context matches cleanly if external LLM generation is blocked by API limits or network constraints.
 
 
-# Key Features
-
-### 1. Experiment Tracking
-
-* Track model parameters
-* Store performance metrics
-* Save model artifacts
-* Compare multiple experiments
-* Ensure reproducibility
+## Tech Stack
+Frontend UI: Streamlit
+Orchestration & Loading: LangChain & LangChain-Community
+Vector Database: ChromaDB (Persistent Storage)
+Embedding Model: Hug Face sentence-transformers/all-MiniLM-L6-v2
+Tunneling/Deployment: Serveo / Localtunnel (for cloud execution access)
 
 
-
-### 2. MLflow Integration
-
-* Experiment Tracking
-* Model Packaging
-* Model Deployment
-* Model Registry
-
-
-
-### 3. Model Registry
-
-* Centralized model repository
-* Model version control
-* Model lineage tracking
-* Deployment management
-
-
-
-### 4. Model Lifecycle Management
-
-* None
-* Staging
-* Production
-* Archived
-
-Models move through controlled deployment stages before production release. 
-
-### 5. Production Monitoring
-
-* Performance tracking
-* Data drift monitoring
-* Model degradation detection
-* Retraining triggers
-
-
-
-### 6. Rollback Support
-
-* Revert to previous versions
-* Safe deployment management
-* Production reliability
-
-
-
-### 7. Predictive Maintenance Use Case
-
-* Equipment failure prediction
-* Sensor data analysis
-* Failure probability estimation
-* Preventive maintenance alerts
-
-
-
-# Technologies Used
-
-* Python
-* MLflow
-* Scikit-Learn
-* Machine Learning Models
-* Model Registry
-* MLOps Pipelines
-* CI/CD Concepts
-* Monitoring & Logging
-
- 
-
-# System Workflow
-
-```text
-Data Collection
        ↓
-Experiment Tracking
-       ↓
-Model Training
-       ↓
-Validation
-       ↓
-Deployment
-       ↓
-Monitoring
-       ↓
-Retraining
-```
-
-This lifecycle creates a continuous improvement loop for machine learning systems. 
-
-
-
-
-
 
 
